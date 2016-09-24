@@ -1,0 +1,15 @@
+﻿#square {
+    position: absolute;
+    left: 1000px;
+    top: 200px;
+}
+
+span {
+    color: red;
+}
+
+body {
+    background-image: url("/Resources/img/login.jpg");
+    background-repeat: no-repeat;
+    font-family: Calibri;
+}

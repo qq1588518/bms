@@ -1,0 +1,31 @@
+﻿span {
+    color:red;
+}
+
+#head {
+    font-size: 10px;
+    position: absolute;
+    left: 900px;
+    top: 10px;
+}
+
+#shenti {
+    position: absolute;
+    left: 970px;
+    top: 120px;
+}
+
+body {
+    background-image: url("/Resources/img/login.jpg");
+    background-repeat: no-repeat;
+    font-family: Calibri;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+    font-style: normal;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
