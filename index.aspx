@@ -10,7 +10,7 @@
     <link href="Resources/css/public.css" rel="stylesheet" type="text/css"/>
     <link href="Resources/css/index.css" rel="stylesheet" type="text/css"/>
 </head>
-<body><!--为什么用不了-->
+<body>
     <form id="form1" runat="server">
     <div id="square">
         账号

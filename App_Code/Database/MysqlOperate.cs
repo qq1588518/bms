@@ -37,20 +37,4 @@ public class MysqlOperate
         }
         return true;
     }
-
-    /// <summary>
-    /// 查询操作：select
-    /// </summary>
-    /// <param name="sql">传入sql语句单条或多条查询</param>
-    /// <returns></returns>
-    public MySqlDataReader S(String sql) {
-        MySqlDataReader mdr = null;
-        MySqlConnection con = MysqlHelper.Connection();
-        MysqlHelper mh = new MysqlHelper();
-        mh.OpenConnection();
-        MySqlCommand msc = new MySqlCommand(sql, con);
-        mdr = msc.ExecuteReader(CommandBehavior.CloseConnection);
-        mh.CloseConnection();
-        return mdr;
-    }
 }
