@@ -23,8 +23,8 @@
             <li class="list1-0 list1"><label>&gt;&gt;</label>我的信息管理</li>
             <li class="list2-0">
                 <ul>
-                    <li><a href="#" target="mainFrame">--修改信息</a></li>
                     <li><a href="/Views/Manager/showmanager.aspx" target="mainFrame">--查看信息</a></li>
+                    <li><a href="/Views/Manager/changemanager.aspx" target="mainFrame">--修改信息</a></li>
                 </ul>
             </li>
 

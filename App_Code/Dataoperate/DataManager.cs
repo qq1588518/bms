@@ -11,6 +11,20 @@ using System.Web;
 public class DataManager
 {
     /// <summary>
+    /// 更改当前用户信息
+    /// </summary>
+    /// <param name="u_name"></param>
+    /// <param name="u_pno"></param>
+    /// <param name="u_password"></param>
+    /// <returns></returns>
+    public Boolean UserChangeInfo(String u_name, String u_pno, String u_password,String userid) {
+        String password = U_String.GetMD5_32(u_password).Substring(8, 16);
+        String sql = "update manager set u_name='" + u_name + "',u_pno='" + u_pno + "',u_password='" + password + "' where u_id=" + int.Parse(userid)+";";
+        String[] sqls = new String[] { sql };
+        return new MysqlOperate().IDU(sqls);
+    }
+
+    /// <summary>
     /// 查看当前用户信息
     /// </summary>
     /// <param name="userid"></param>
