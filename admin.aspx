@@ -15,18 +15,16 @@
     <!--左侧功能选项栏-->
     <div id="left">
         <div id="left-menu">
-            <p>图书管理系统</p><a href="index.aspx">退出</a><a href="#">帮助</a>
+            <p><%=username%></p><a href="index.aspx">退出</a><a href="#">帮助</a>
         </div>
       
         <p class="mnue">菜单列表</p>
         <ul>
-            <li class="list1-0 list1"><label>&gt;&gt;</label>管理员信息管理</li>
+            <li class="list1-0 list1"><label>&gt;&gt;</label>我的信息管理</li>
             <li class="list2-0">
                 <ul>
-                    <li><a href="http://www.imooc.com/" target="mainFrame">--添加管理员</a></li>
-                    <li><a href="#" target="mainFrame">--修改管理员信息</a></li>
-                    <li><a href="#" target="mainFrame">--删除管理员</a></li>
-                    <li><a href="#" target="mainFrame">--查看所有管理员</a></li>
+                    <li><a href="#" target="mainFrame">--修改信息</a></li>
+                    <li><a href="/Views/Manager/showmanager.aspx" target="mainFrame">--查看信息</a></li>
                 </ul>
             </li>
 

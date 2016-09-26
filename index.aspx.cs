@@ -23,6 +23,7 @@ public partial class index : System.Web.UI.Page
         String userid = new DataManager().checkLogin(name.Text, password.Text);
         if (userid != null) {
             Session["userid"] = userid;
+            Session["username"] = name.Text;
             Response.Redirect("admin.aspx", true);
         } else {
             Response.Write("<script>alert('密码错误，请重新登录！')</script>");

@@ -11,6 +11,28 @@ using System.Web;
 public class DataManager
 {
     /// <summary>
+    /// 查看当前用户信息
+    /// </summary>
+    /// <param name="userid"></param>
+    /// <returns></returns>
+    public String[] SelectUser(String userid) {
+        String[] userinfo=new String[3];
+        MySqlDataReader mdr = null;
+        MySqlConnection con = MysqlHelper.Connection();
+        MysqlHelper mh = new MysqlHelper();
+        mh.OpenConnection();
+        MySqlCommand msc = new MySqlCommand("select u_name,u_password,u_pno from manager where u_id="+int.Parse(userid), con);
+        mdr = msc.ExecuteReader(CommandBehavior.CloseConnection);
+        while (mdr.Read()) {
+            userinfo[0] = mdr.GetString("u_name");
+            userinfo[1] = mdr.GetString("u_password");
+            userinfo[2] = mdr.GetString("u_pno");
+        }
+        mh.CloseConnection();
+        return userinfo;
+    }
+
+    /// <summary>
     /// 管理员注册验证
     /// </summary>
     /// <param name="u_name"></param>
