@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 
 /// <summary>
@@ -8,10 +9,19 @@ using System.Web;
 /// </summary>
 public class U_String
 {
-	public U_String()
-	{
-		//
-		// TODO: 在此处添加构造函数逻辑
-		//
-	}
+    /// <summary>
+    /// 获得32位的MD5加密
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
+ 
+    public static string GetMD5_32(string input) {
+        System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create();
+        byte[] data = md5.ComputeHash(System.Text.Encoding.Default.GetBytes(input));
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < data.Length; i++) {
+            sb.Append(data[i].ToString("x2"));
+        }
+        return sb.ToString();
+    }
 }
