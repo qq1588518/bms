@@ -32,7 +32,7 @@
             <li class="list2-1">
                 <ul>
                     <li><a href="/Views/Reader/addreader.aspx" target="mainFrame">--添加读者</a></li>
-                    <li><a href="#" target="mainFrame">--编辑读者信息</a></li>
+                    <li><a href="/Views/Reader/editreader.aspx" target="mainFrame">--编辑读者信息</a></li>
                 </ul>
             </li>
 
