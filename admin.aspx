@@ -31,10 +31,8 @@
             <li class="list1-1 list1"><label>&gt;&gt;</label>读者信息管理</li>
             <li class="list2-1">
                 <ul>
-                    <li><a href="#" target="mainFrame">--添加读者</a></li>
-                    <li><a href="#" target="mainFrame">--修改读者信息</a></li>
-                    <li><a href="#" target="mainFrame">--删除读者</a></li>
-                    <li><a href="#" target="mainFrame">--查看读者信息</a></li>
+                    <li><a href="/Views/Reader/addreader.aspx" target="mainFrame">--添加读者</a></li>
+                    <li><a href="#" target="mainFrame">--编辑读者信息</a></li>
                 </ul>
             </li>
 
@@ -42,9 +40,7 @@
             <li class="list2-2">
                 <ul>
                     <li><a href="#" target="mainFrame">--添加图书</a></li>
-                    <li><a href="#" target="mainFrame">--修改图书信息</a></li>
-                    <li><a href="#" target="mainFrame">--删除图书</a></li>
-                    <li><a href="#" target="mainFrame">--查看图书信息</a></li>
+                    <li><a href="#" target="mainFrame">--编辑图书信息</a></li>
                 </ul>
             </li>
 
@@ -52,9 +48,7 @@
             <li class="list2-3">
                  <ul>
                     <li><a href="#" target="mainFrame">--添加分类</a></li>
-                    <li><a href="#" target="mainFrame">--修改分类</a></li>
-                    <li><a href="#" target="mainFrame">--删除分类</a></li>
-                    <li><a href="#" target="mainFrame">--查看分类</a></li>
+                    <li><a href="#" target="mainFrame">--编辑分类</a></li>
                 </ul>
             </li>
 
@@ -62,9 +56,8 @@
             <li class="list2-4">
                 <ul>
                     <li><a href="#" target="mainFrame">--借书</a></li>
-                    <li><a href="#" target="mainFrame">--还书</a></li>
-                    <li><a href="#" target="mainFrame">--续借</a></li>
-                    <li><a href="#" target="mainFrame">--查看借/还书信息</a></li>
+                    <li><a href="#" target="mainFrame">--编辑借/还/续借书</a></li>
+                    <li><a href="#" target="mainFrame">--查看所有借/还书信息</a></li>
                 </ul>
             </li>
         </ul>
