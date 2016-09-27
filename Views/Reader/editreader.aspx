@@ -17,15 +17,15 @@
                 <td>图书证号</td>
                 <td>编辑</td>
             </tr>
-            <% foreach( Reader reader in readers){%>
+            <% foreach( Reader reader in readers){;%>
             <tr>
                 <td><%=reader.R_name %></td>
                 <td><%=reader.R_sex %></td>
                 <td><%=reader.R_no %></td>
                 <td>
-                    <asp:Button ID="showreader" runat="server" Text="查看" OnClick="showreader_Click"/>
-                    <asp:Button ID="changereader" runat="server" Text="修改" OnClick="changereader_Click" />
-                    <asp:Button ID="deletereader" runat="server" Text="删除" OnClick="deletereader_Click" />
+                    <a href="/Views/Reader/showreader.aspx?readerid=<%=reader.R_id %>" >查看</a>
+                    <a href="/Views/Reader/changereader.aspx?readerid=<%=reader.R_id %>" >修改</a>
+                    <a href="/Views/Reader/editreader.aspx?readerid=<%=reader.R_id %>" >删除</a>
                 </td>
             </tr>
             <%}; %>

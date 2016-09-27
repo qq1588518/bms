@@ -16,32 +16,12 @@ public partial class Views_Reader_editreader : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
          readers=new DataReader().GetReaderInfo();
-    }
 
-    /// <summary>
-    /// 显示读者信息
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    protected void showreader_Click(object sender, EventArgs e) {
-
-    }
-
-    /// <summary>
-    /// 修改读者信息
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    protected void changereader_Click(object sender, EventArgs e) {
-
-    }
-
-    /// <summary>
-    /// 删除读者
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    protected void deletereader_Click(object sender, EventArgs e) {
-
+         if (Request.QueryString.Get("readerid") != null) {
+             if (new DataReader().DeleteReader(int.Parse(Request.QueryString.Get("readerid")))) {
+                 Response.Redirect("/Views/Reader/editreader.aspx", true);
+             }
+         }
+         
     }
 }
