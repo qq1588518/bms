@@ -51,4 +51,13 @@ public class DataBooktype
         String[] sqls = new String[] { sql };
         return new MysqlOperate().IDU(sqls);
     }
+
+    /// <summary>
+    /// 删除分类
+    /// </summary>
+    /// <param name="p"></param>
+    /// <returns></returns>
+    public bool DeleteBookType(int booktypeid) {
+        return new MysqlOperate().IDU(new String[] { "delete from booktype where t_id=" + booktypeid });
+    }
 }
