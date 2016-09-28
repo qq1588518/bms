@@ -14,6 +14,13 @@ public class Booktype
 		// TODO: 在此处添加构造函数逻辑
 		//
 	}
+
+    public Booktype(int t_id, int t_subid, string t_name) {
+        // TODO: Complete member initialization
+        this.t_id = t_id;
+        this.t_subid = t_subid;
+        this.t_name = t_name;
+    }
     private int t_id;   //图书分类id
 
     public int T_id {

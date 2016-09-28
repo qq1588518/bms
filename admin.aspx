@@ -47,7 +47,7 @@
             <li class="list1-3 list1"><label>&gt;&gt;</label>图书分类管理</li>
             <li class="list2-3">
                  <ul>
-                    <li><a href="#" target="mainFrame">--添加分类</a></li>
+                    <li><a href="/Views/Booktype/addbooktype.aspx" target="mainFrame">--添加分类</a></li>
                     <li><a href="#" target="mainFrame">--编辑分类</a></li>
                 </ul>
             </li>

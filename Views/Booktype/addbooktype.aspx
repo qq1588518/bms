@@ -8,9 +8,15 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form method="get" action="/Views/Booktype/addbooktype.aspx">
     <div>
-        
+        输入类型名称：<input type="text" name="t_name"/>
+        选择父分类：<select name="t_subid">
+        <%foreach(Booktype booktyppe in booktypes){; %>
+               <option value="<%=booktyppe.T_id %>"><%=booktyppe.T_name %></option>
+        <%}; %>
+        </select>
+        <input type="submit" value="提交"/>
     </div>
     </form>
 </body>
