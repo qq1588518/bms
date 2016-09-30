@@ -49,7 +49,7 @@
                  <ul>
                     <li><a href="/Views/Booktype/addbooktype.aspx" target="mainFrame">--添加分类</a></li>
                     <li><a href="/Views/Booktype/editbooktype.aspx" target="mainFrame">--编辑分类</a></li>
-                    <li><a href="#" target="mainFrame">--查看分类树</a></li>
+                    <li><a href="/Views/Booktype/showbooktypetree.aspx" target="mainFrame">--查看分类树</a></li>
                 </ul>
             </li>
 

@@ -58,6 +58,6 @@ public class DataBooktype
     /// <param name="p"></param>
     /// <returns></returns>
     public bool DeleteBookType(int booktypeid) {
-        return new MysqlOperate().IDU(new String[] { "delete from booktype where t_id=" + booktypeid });
+        return new MysqlOperate().IDU(new String[] { "delete from booktype where t_id=" + booktypeid});
     }
 }
