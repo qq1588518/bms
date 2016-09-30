@@ -17,7 +17,7 @@ public partial class Views_Booktype_dochangebooktype : System.Web.UI.Page
             String t_name = Request.QueryString.Get("t_name");
             int t_subid = int.Parse(Request.QueryString.Get("t_subid"));
 
-            if (new DataBook().ChangeBookTypeInfo(t_id, t_subid, t_name)) {
+            if (new DataBooktype().ChangeBookTypeInfo(t_id, t_subid, t_name)) {
                 Response.Redirect("/success.aspx", true);
             } else {
                 Response.Write("<script>alert('修改失败，请重新修改！')</script>");

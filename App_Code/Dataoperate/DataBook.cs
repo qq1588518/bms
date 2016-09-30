@@ -16,15 +16,16 @@ public class DataBook
 	}
 
     /// <summary>
-    /// 修改分类信息
+    /// 添加图书
     /// </summary>
     /// <param name="t_id"></param>
-    /// <param name="t_subid"></param>
-    /// <param name="t_name"></param>
+    /// <param name="b_name"></param>
+    /// <param name="b_no"></param>
+    /// <param name="b_total1"></param>
+    /// <param name="b_total2"></param>
+    /// <param name="p"></param>
     /// <returns></returns>
-    public Boolean ChangeBookTypeInfo(int t_id, int t_subid, string t_name) {
-        String sql = "update booktype set t_subid=" + t_subid + ",t_name='" + t_name + "' where t_id=" + t_id + ";";
-        String[] sqls = new String[] { sql };
-        return new MysqlOperate().IDU(sqls);
+    public bool AddBook(int t_id, string b_name, int b_no, int b_total, int b_newnumber, int b_buildtime) {
+        return new MysqlOperate().IDU(new String[] {"insert into book(t_id,b_name,b_no,b_total,b_newnumber,b_buildtime) values("+t_id+",'"+b_name+"',"+b_no+","+b_total+","+b_newnumber+","+b_buildtime+");" });
     }
 }

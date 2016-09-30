@@ -18,6 +18,19 @@ public class DataBooktype
 	}
 
     /// <summary>
+    /// 修改分类信息
+    /// </summary>
+    /// <param name="t_id"></param>
+    /// <param name="t_subid"></param>
+    /// <param name="t_name"></param>
+    /// <returns></returns>
+    public Boolean ChangeBookTypeInfo(int t_id, int t_subid, string t_name) {
+        String sql = "update booktype set t_subid=" + t_subid + ",t_name='" + t_name + "' where t_id=" + t_id + ";";
+        String[] sqls = new String[] { sql };
+        return new MysqlOperate().IDU(sqls);
+    }
+
+    /// <summary>
     /// 获取所有分类
     /// </summary>
     /// <returns></returns>
