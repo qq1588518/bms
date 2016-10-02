@@ -94,4 +94,14 @@ public class DataB_R
     public bool DeleteB_R(int id) {
         return new MysqlOperate().IDU(new String[] { "delete from b_r where id=" + id });
     }
+
+    /// <summary>
+    /// 修改关系
+    /// </summary>
+    /// <param name="p"></param>
+    /// <param name="ib"></param>
+    /// <returns></returns>
+    public bool B_RChangeInfo(int numberagain, int ib,int brid) {
+        return new MysqlOperate().IDU(new String[]{"update b_r set "});
+    }
 }
