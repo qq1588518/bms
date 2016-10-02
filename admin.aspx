@@ -57,8 +57,8 @@
             <li class="list2-4">
                 <ul>
                     <li><a href="/Views/B_R/addb_r.aspx" target="mainFrame">--借书</a></li>
-                    <li><a href="#" target="mainFrame">--编辑借/还/续借书</a></li>
-                    <li><a href="#" target="mainFrame">--查看所有借/还书信息</a></li>
+                    <li><a href="/Views/B_R/editb_r.aspx" target="mainFrame">--编辑借/还/续借书</a></li>
+                    <li><a href="/Views/B_R/showallb_r.aspx" target="mainFrame">--查看所有借/还书信息</a></li>
                 </ul>
             </li>
         </ul>

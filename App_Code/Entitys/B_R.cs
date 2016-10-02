@@ -14,6 +14,18 @@ public class B_R
 		// TODO: 在此处添加构造函数逻辑
 		//
 	}
+
+    public B_R(int id,int r_id, int b_id, int isback, int numberfirst, int numberagain, int b_booktime, long r_booktime) {
+        // TODO: Complete member initialization
+        this.id = id;
+        this.r_id = r_id;
+        this.b_id = b_id;
+        this.isback = isback;
+        this.numberfirst = numberfirst;
+        this.numberagain = numberagain;
+        this.b_booktime = b_booktime;
+        this.r_booktime = r_booktime;
+    }
     private int id; //关联表id
 
     public int Id {
@@ -56,9 +68,9 @@ public class B_R
         get { return b_booktime; }
         set { b_booktime = value; }
     }
-    private int r_booktime; //还书时间
+    private long r_booktime; //还书时间
 
-    public int R_booktime {
+    public long R_booktime {
         get { return r_booktime; }
         set { r_booktime = value; }
     }
