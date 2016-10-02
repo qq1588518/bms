@@ -8,6 +8,9 @@ using System.Web.UI.WebControls;
 public partial class Views_Manager_changemanager : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e) {
+        if (Session["userid"] == null || Session["username"] == null) {
+            Response.Redirect("/index.aspx", true);
+        }
         String[] userinfo = new DataManager().SelectUser(Session["userid"].ToString());
         u_name.Text = userinfo[0];
         u_password.Text = userinfo[1];

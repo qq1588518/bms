@@ -11,6 +11,9 @@ public partial class Views_Booktype_changebooktype : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["userid"] == null || Session["username"] == null) {
+            Response.Redirect("/index.aspx", true);
+        }
         booktypes = new DataBooktype().GetBooktypes();
     }
 }

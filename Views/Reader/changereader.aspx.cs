@@ -16,6 +16,9 @@ public partial class Views_Reader_changereader : System.Web.UI.Page
     /// <param name="e"></param>
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["userid"] == null || Session["username"] == null) {
+            Response.Redirect("/index.aspx", true);
+        }
         r_id = int.Parse(Request.QueryString.Get("readerid"));
         Reader reader = new DataReader().GetOneReaderInfo(r_id);
         name.Text = reader.R_name;

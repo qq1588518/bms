@@ -12,6 +12,9 @@ public partial class Views_Booktype_dochangebooktype : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["userid"] == null || Session["username"] == null) {
+            Response.Redirect("/index.aspx", true);
+        }
         if (Request.QueryString.Get("t_id") != null && Request.QueryString.Get("t_name") != null && Request.QueryString.Get("t_subid") != null) {
             int t_id = int.Parse(Request.QueryString.Get("t_id"));
             String t_name = Request.QueryString.Get("t_name");

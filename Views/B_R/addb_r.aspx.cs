@@ -13,6 +13,9 @@ public partial class Views_B_R_addb_r : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["userid"] == null || Session["username"] == null) {
+            Response.Redirect("/index.aspx", true);
+        }
         List<Book> books = new DataBook().GetBookInfo();
         booklist.DataTextField = "b_name";
         booklist.DataValueField = "b_id";
