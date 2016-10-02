@@ -40,7 +40,7 @@
             <li class="list2-2">
                 <ul>
                     <li><a href="/Views/Book/addbook.aspx" target="mainFrame">--添加图书</a></li>
-                    <li><a href="#" target="mainFrame">--编辑图书信息</a></li>
+                    <li><a href="/Views/Book/editbook.aspx" target="mainFrame">--编辑图书信息</a></li>
                 </ul>
             </li>
 

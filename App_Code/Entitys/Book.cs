@@ -14,6 +14,17 @@ public class Book
 		// TODO: 在此处添加构造函数逻辑
 		//
 	}
+
+    public Book(int b_id, int t_id, string b_name, int b_no, int b_total, int b_newnumber, int b_buildtime) {
+        // TODO: Complete member initialization
+        this.b_id = b_id;
+        this.t_id = t_id;
+        this.b_name = b_name;
+        this.b_no = b_no;
+        this.b_total = b_total;
+        this.b_newnumber = b_newnumber;
+        this.b_buildtime = b_buildtime;
+    }
     private int b_id;   //图书id
 
     public int B_id {
@@ -51,6 +62,8 @@ public class Book
         set { b_newnumber = value; }
     }
     private int b_buildtime;    //图书入库时间
+    private int t_total;
+    private int t_buildtime;
 
     public int B_buildtime {
         get { return b_buildtime; }

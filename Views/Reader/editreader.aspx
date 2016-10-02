@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <table style="width:70%;border: dashed 5px;">
+        <table width="50%" border="1" cellspacing="0" cellpadding="5">
             <tr>
                 <td>姓名</td>
                 <td>性别</td>

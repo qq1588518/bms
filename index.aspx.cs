@@ -22,7 +22,7 @@ public partial class index : System.Web.UI.Page
     protected void login_Click(object sender, EventArgs e) {
         String userid = new DataManager().checkLogin(name.Text, password.Text);
         if (userid != null) {
-            Session.Timeout = 10;
+            Session.Timeout = 60;
             Session["userid"] = userid;
             Session["username"] = name.Text;
             Response.Redirect("admin.aspx", true);
