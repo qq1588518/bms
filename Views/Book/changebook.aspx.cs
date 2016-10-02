@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 public partial class Views_Book_changebook : System.Web.UI.Page
 {
-    String t_id = "";
+    int t_id = 0;
     String name = "";
     int no = 0;
     int total = 0;
@@ -35,7 +35,7 @@ public partial class Views_Book_changebook : System.Web.UI.Page
         booklist.DataTextField = "t_name";
         booklist.DataValueField = "t_id";
         booklist.DataSource = booktypes;
-        t_id = booklist.SelectedValue;
+        t_id = int.Parse(booklist.SelectedValue);
         booklist.DataBind();
     }
 

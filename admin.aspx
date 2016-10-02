@@ -56,7 +56,7 @@
             <li class="list1-4 list1"><label>&gt;&gt;</label>借/还书信息管理</li>
             <li class="list2-4">
                 <ul>
-                    <li><a href="#" target="mainFrame">--借书</a></li>
+                    <li><a href="/Views/B_R/addb_r.aspx" target="mainFrame">--借书</a></li>
                     <li><a href="#" target="mainFrame">--编辑借/还/续借书</a></li>
                     <li><a href="#" target="mainFrame">--查看所有借/还书信息</a></li>
                 </ul>

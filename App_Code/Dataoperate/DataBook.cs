@@ -95,7 +95,7 @@ public class DataBook
     /// <param name="t_id"></param>
     /// <param name="b_id"></param>
     /// <returns></returns>
-    public bool BookChangeInfo(string name, int no, int total, int newnumber, string t_id, int b_id) {
+    public bool BookChangeInfo(string name, int no, int total, int newnumber, int t_id, int b_id) {
         return new MysqlOperate().IDU(new String[] { "update book set b_name='" + name + "',b_no=" + no + ",b_total=" + total + ",b_newnumber=" + newnumber + ",t_id=" + t_id + " where b_id=" + b_id });
     }
 

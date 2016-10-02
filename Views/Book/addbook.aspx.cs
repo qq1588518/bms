@@ -25,10 +25,10 @@ public partial class Views_Book_addbook : System.Web.UI.Page
     /// <param name="sender"></param>
     /// <param name="e"></param>
     protected void addbook_Click(object sender, EventArgs e) {
-        if (new DataBook().AddBook(int.Parse(t_id),b_name.Text,int.Parse(b_no.Text),int.Parse(b_total.Text),int.Parse(b_total.Text),int.Parse(U_Date.NowTimeToUnix()))) {
-             Response.Redirect("/success.aspx", true);
-            } else {
-                Response.Write("<script>alert('添加失败，请重新添加！')</script>");
-            }
+        if (new DataBook().AddBook(int.Parse(t_id), b_name.Text, int.Parse(b_no.Text), int.Parse(b_total.Text), int.Parse(b_total.Text), int.Parse(U_Date.NowTimeToUnix()))) {
+            Response.Redirect("/success.aspx", true);
+        } else {
+            Response.Write("<script>alert('添加失败，请重新添加！')</script>");
+        }
     }
 }
