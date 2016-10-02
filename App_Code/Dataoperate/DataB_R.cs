@@ -102,6 +102,7 @@ public class DataB_R
     /// <param name="ib"></param>
     /// <returns></returns>
     public bool B_RChangeInfo(int numberagain, int ib,int brid) {
-        return new MysqlOperate().IDU(new String[]{"update b_r set "});
+        long r_newbooktime = GetOneB_RInfo(brid).R_booktime + 86400 * numberagain;
+        return new MysqlOperate().IDU(new String[]{"update b_r set numberagain="+numberagain+",isback="+ib+",r_booktime="+r_newbooktime+" where id="+brid});
     }
 }
