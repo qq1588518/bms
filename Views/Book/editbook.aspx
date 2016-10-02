@@ -25,7 +25,7 @@
                 <td>
                     <a href="/Views/Book/showbook.aspx?bookid=<%=book.B_id %>" >查看</a>
                     <a href="/Views/Book/changebook.aspx?bookid=<%=book.B_id %>" >修改</a>
-                    <a href="/Views/Book/editbook.aspx?bookid=<%=book.B_id %>" >删除</a>
+                    <a href="/Views/Book/editbook.aspx?delete_bookid=<%=book.B_id %>" >删除</a>
                 </td>
             </tr>
             <%}; %>

@@ -85,7 +85,26 @@ public class DataBook
         return book;
     }
 
+    /// <summary>
+    /// 修改图书信息
+    /// </summary>
+    /// <param name="name"></param>
+    /// <param name="no"></param>
+    /// <param name="total"></param>
+    /// <param name="newnumber"></param>
+    /// <param name="t_id"></param>
+    /// <param name="b_id"></param>
+    /// <returns></returns>
     public bool BookChangeInfo(string name, int no, int total, int newnumber, string t_id, int b_id) {
         return new MysqlOperate().IDU(new String[] { "update book set b_name='" + name + "',b_no=" + no + ",b_total=" + total + ",b_newnumber=" + newnumber + ",t_id=" + t_id + " where b_id=" + b_id });
+    }
+
+    /// <summary>
+    /// 删除图书
+    /// </summary>
+    /// <param name="b_id"></param>
+    /// <returns></returns>
+    public bool DeleteBook(int b_id) {
+        return new MysqlOperate().IDU(new String[]{"delete from book where b_id="+b_id});
     }
 }
