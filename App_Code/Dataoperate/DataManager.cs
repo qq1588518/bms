@@ -18,7 +18,7 @@ public class DataManager
     /// <param name="u_password"></param>
     /// <returns></returns>
     public Boolean UserChangeInfo(String u_name, String u_pno, String u_password,String userid) {
-        String password = U_String.GetMD5_32(u_password).Substring(8, 16);
+        String password = U_String.GetMD5_32(u_password).Substring(8, 16).Trim();
         String sql = "update manager set u_name='" + u_name + "',u_pno='" + u_pno + "',u_password='" + password + "' where u_id=" + int.Parse(userid)+";";
         String[] sqls = new String[] { sql };
         return new MysqlOperate().IDU(sqls);

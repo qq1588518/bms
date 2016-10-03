@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-09-23 13:55:46
+Date: 2016-10-03 19:58:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -30,11 +30,7 @@ CREATE TABLE `book` (
   PRIMARY KEY (`b_id`),
   KEY `fk_b_t` (`t_id`),
   CONSTRAINT `fk_b_t` FOREIGN KEY (`t_id`) REFERENCES `booktype` (`t_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of book
--- ----------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for booktype
@@ -42,14 +38,10 @@ CREATE TABLE `book` (
 DROP TABLE IF EXISTS `booktype`;
 CREATE TABLE `booktype` (
   `t_id` int(3) unsigned NOT NULL AUTO_INCREMENT COMMENT '图书分类id号',
-  `t_subid` int(3) unsigned NOT NULL COMMENT '图书子分类id号',
+  `t_subid` int(3) unsigned NOT NULL COMMENT '图书父分类id号',
   `t_name` varchar(20) NOT NULL COMMENT '分类名称',
   PRIMARY KEY (`t_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of booktype
--- ----------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for b_r
@@ -69,11 +61,7 @@ CREATE TABLE `b_r` (
   KEY `fk_b_r_b` (`b_id`),
   CONSTRAINT `fk_b_r_b` FOREIGN KEY (`b_id`) REFERENCES `book` (`b_id`),
   CONSTRAINT `fk_b_r_r` FOREIGN KEY (`r_id`) REFERENCES `reader` (`r_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of b_r
--- ----------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for manager
@@ -90,7 +78,7 @@ CREATE TABLE `manager` (
 -- ----------------------------
 -- Records of manager
 -- ----------------------------
-INSERT INTO `manager` VALUES ('1', 'admin', '123456', '13227031580');
+INSERT INTO `manager` VALUES ('1', 'admin', 'a0b923820dcc509a', '13227031580');
 
 -- ----------------------------
 -- Table structure for reader
@@ -100,12 +88,8 @@ CREATE TABLE `reader` (
   `r_id` int(4) unsigned NOT NULL AUTO_INCREMENT COMMENT '读者id号',
   `r_name` char(10) NOT NULL COMMENT '读者姓名',
   `r_sex` char(1) NOT NULL COMMENT '读者性别',
-  `r_no` int(11) unsigned NOT NULL COMMENT '读者图书证号',
-  `r_pno` int(11) unsigned NOT NULL COMMENT '读者联系方式',
-  `r_pic` varchar(40) NOT NULL COMMENT '读者照片s',
+  `r_no` varchar(11) NOT NULL COMMENT '读者图书证号',
+  `r_pno` varchar(11) NOT NULL COMMENT '读者联系方式',
+  `r_pic` varchar(40) NOT NULL COMMENT '读者照片',
   PRIMARY KEY (`r_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of reader
--- ----------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;

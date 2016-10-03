@@ -16,7 +16,7 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="手机号不能为空！" Display="Static" ControlToValidate="u_pno"></asp:RequiredFieldValidator>
             密码<asp:TextBox ID="u_password" TextMode="Password" runat="server" /><br />
             确认密码<asp:TextBox ID="u_password_again" TextMode="Password" runat="server" />
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="u_password" ControlToCompare="u_password_again" Type="string" Operator="Equal" ErrorMessage="密码不一致!" Display="Static"></asp:CompareValidator>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="u_password" ControlToCompare="u_password_again" Type="string" Operator="Equal" ErrorMessage="密码不一致!" Display="Static"></asp:CompareValidator>  
             <asp:Button ID="Button2" runat="server" Text="确认修改"  Font-Size="14" OnClick="Button2_Click"/>
     </div>
     </form>

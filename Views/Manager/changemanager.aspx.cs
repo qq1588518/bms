@@ -28,7 +28,7 @@ public partial class Views_Manager_changemanager : System.Web.UI.Page
         String password = u_password.Text;
         String password_again = u_password_again.Text;
         if (!(password.Trim().Equals("") && password_again.Trim().Equals(""))) {
-            if (new DataManager().UserChangeInfo(name, pno, password, Session["userid"].ToString())) {
+            if (new DataManager().UserChangeInfo(name, pno, password_again, Session["userid"].ToString())) {
                 Response.Redirect("/success.aspx", true);
             } else {
                 Response.Write("<script>alert('修改失败，请重新修改！')</script>");
