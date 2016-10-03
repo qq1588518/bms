@@ -19,8 +19,8 @@
             <tr>
                 <td><%=booktype.T_name %></td>
                 <td>
-                    <a href="/Views/Booktype/changebooktype.aspx?booktypeid=<%=booktype.T_id %>" >修改</a>
-                    <a href="/Views/Booktype/editbooktype.aspx?booktypeid=<%=booktype.T_id %>" >删除</a>
+                    <a href="/Views/Booktype/changebooktype.aspx?type_name=<%=booktype.T_name %>&booktypeid=<%=booktype.T_id %>" >修改</a>
+                    <a href="/Views/Booktype/editbooktype.aspx?delete_booktypeid=<%=booktype.T_id %>" >删除</a>
                 </td>
             </tr>
             <%}; %>

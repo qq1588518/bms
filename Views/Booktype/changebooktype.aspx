@@ -8,16 +8,11 @@
     <title></title>
 </head>
 <body>
-    <form method="get" action="/Views/Booktype/dochangebooktype.aspx">
+    <form id="form1" runat="server">
     <div>
-        修改类型名称：<input type="text" name="t_name"/>
-        选择父分类：<select name="t_subid">
-        <%foreach(Booktype booktype in booktypes){; %>
-               <option value="<%=booktype.T_id %>"><%=booktype.T_name %></option>
-        <%}; %>
-        </select>
-        <input type="text" name="t_id" hidden="hidden" value="<%=Request.QueryString.Get("booktypeid") %>"/>
-        <input type="submit" value="确认修改"/>
+        修改类型名称：<asp:TextBox ID="t_name" runat="server"></asp:TextBox>
+        选择父分类：<asp:DropDownList ID="booktypelist" runat="server"></asp:DropDownList>
+        <asp:Button ID="changebooktype" runat="server" Text="确认修改" OnClick="changebooktype_Click" />
     </div>
     </form>
 </body>

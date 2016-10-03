@@ -16,7 +16,7 @@ public partial class Views_Booktype_editbooktype : System.Web.UI.Page
         }
         booktypes = new DataBooktype().GetBooktypes();
 
-        if (Request.QueryString.Get("booktypeid") != null) {
+        if (Request.QueryString.Get("delete_booktypeid") != null) {
             if (new DataBooktype().DeleteBookType(int.Parse(Request.QueryString.Get("booktypeid")))) {
                 Response.Redirect("/Views/Booktype/editbooktype.aspx", true);
             }
