@@ -10,14 +10,16 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <table style="width:70%;border: dashed 5px;">
+        <table width="50%" border="1" cellspacing="0" cellpadding="5">
             <tr>
                 <td>分类名称</td>
+                <td>父分类</td>
                 <td>编辑</td>
             </tr>
             <% foreach( Booktype booktype in booktypes){;%>
             <tr>
                 <td><%=booktype.T_name %></td>
+                <td><%=new DataBooktype().GetOneBooktype(booktype.T_subid).T_name %></td>
                 <td>
                     <a href="/Views/Booktype/changebooktype.aspx?type_name=<%=booktype.T_name %>&booktypeid=<%=booktype.T_id %>" >修改</a>
                     <a href="/Views/Booktype/editbooktype.aspx?delete_booktypeid=<%=booktype.T_id %>" >删除</a>

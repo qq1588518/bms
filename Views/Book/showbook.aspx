@@ -12,10 +12,10 @@
     <div>
         <label>图书名：</label><p><%=book.B_name %></p><br />
         <label>图书编号：</label><p><%=book.B_no %></p><br />
-        <label>图书分类：</label><p><%=book.T_id %></p><br />
+        <label>图书分类：</label><p><%=new DataBooktype().GetOneBooktype(book.T_id).T_name %></p><br />
         <label>图书总数：</label><p><%=book.B_total %></p><br />
         <label>图书当前数：</label><p><%=book.B_newnumber %></p><br />
-        <label>图书入库时间：</label><p><%=book.B_buildtime %></p><br />
+        <label>图书入库时间：</label><p><%=U_Date.TimeFormat(""+book.B_buildtime,"yyyy-MM-dd hh:mm:ss") %></p><br />
     </div>
     </form>
 </body>

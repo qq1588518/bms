@@ -54,6 +54,28 @@ public class DataBooktype
     }
 
     /// <summary>
+    /// 获取当前类型
+    /// </summary>
+    /// <returns></returns>
+    public Booktype GetOneBooktype(int id) {
+        Booktype booktype=null;
+        MySqlDataReader mdr = null;
+        MySqlConnection con = MysqlHelper.Connection();
+        MysqlHelper mh = new MysqlHelper();
+        mh.OpenConnection();
+        MySqlCommand msc = new MySqlCommand("select * from booktype where t_id="+id, con);
+        mdr = msc.ExecuteReader(CommandBehavior.CloseConnection);
+        if (mdr.Read()) {
+            int t_id = mdr.GetInt16("t_id");
+            int t_subid = mdr.GetInt16("t_subid");
+            String t_name = mdr.GetString("t_name");
+            booktype = new Booktype(t_id, t_subid, t_name);
+        }
+        mh.CloseConnection();
+        return booktype;
+    }
+
+    /// <summary>
     /// 添加分类
     /// </summary>
     /// <param name="t_subid"></param>

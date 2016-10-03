@@ -38,7 +38,9 @@ public partial class Views_Book_changebook : System.Web.UI.Page
         booklist.DataTextField = "t_name";
         booklist.DataValueField = "t_id";
         booklist.DataSource = booktypes;
-        t_id = int.Parse(booklist.SelectedValue);
+        if (!booklist.SelectedValue.Equals("")) {
+            t_id = int.Parse(booklist.SelectedValue);
+        }
         booklist.DataBind();
     }
 

@@ -21,7 +21,7 @@
             <tr>
                 <td><%=book.B_name %></td>
                 <td><%=book.B_no %></td>
-                <td><%=book.B_id %></td>
+                <td><%=new DataBooktype().GetOneBooktype(book.T_id).T_name %></td>
                 <td>
                     <a href="/Views/Book/showbook.aspx?bookid=<%=book.B_id %>" >查看</a>
                     <a href="/Views/Book/changebook.aspx?bookid=<%=book.B_id %>" >修改</a>

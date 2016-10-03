@@ -13,7 +13,7 @@
         <label>姓名：</label><p><%=reader.R_name %></p><br />
         <label>性别：</label><p><%=reader.R_sex %></p><br />
         <label>图书证号：</label><p><%=reader.R_no %></p><br />
-        <label>图书证号：</label><p><%=reader.R_pno %></p><br />
+        <label>联系电话：</label><p><%=reader.R_pno %></p><br />
         <img src="<%=reader.R_pic %>"/>
     </div>
     </form>

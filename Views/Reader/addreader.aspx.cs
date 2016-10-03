@@ -22,8 +22,9 @@ public partial class Views_Reader_addreader : System.Web.UI.Page
     protected void addreader_Click(object sender, EventArgs e) {
         String r_name = name.Text;
         String r_sex = sex.Text;
-        LibraryCard.no+=1;
-        String r_no ="201601"+ (LibraryCard.no);
+        List<Reader> readers=new DataReader().GetReaderInfo();
+        LibraryCard.no = readers[readers.Count - 1].R_id + 1;
+        String r_no ="201601"+ (LibraryCard.no+10000);
         String r_pno = pno.Text;
         String filename = U_Date.NowTimeToUnix() + "." + U_File.GetFex(picture.FileName);
         String r_pic = Server.MapPath("/Uploads/") + filename;
