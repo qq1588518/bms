@@ -27,7 +27,7 @@ public partial class index : System.Web.UI.Page
             Session["username"] = name.Text;
             Response.Redirect("admin.aspx", true);
         } else {
-            Response.Write("<script>alert('密码错误，请重新登录！')</script>");
+            Response.Write("<script>alert('用户名或密码错误，请重新登录！')</script>");
         }
     }
 }
