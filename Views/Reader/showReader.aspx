@@ -8,12 +8,12 @@
     <title></title>
 </head>
 <body>
+    <h2 style="color:blue;"><i>查看读者</i></h2><hr/><br/>
     <form id="form1" runat="server">
-    <div>
-        <label>姓名：</label><p><%=reader.R_name %></p><br />
-        <label>性别：</label><p><%=reader.R_sex %></p><br />
-        <label>图书证号：</label><p><%=reader.R_no %></p><br />
-        <label>联系电话：</label><p><%=reader.R_pno %></p><br />
+    <div style="font-size:20px;">
+        <pre>
+<label>姓名:</label><%=reader.R_name %>  <label>性别 :</label><%=reader.R_sex %> <label>图书证号 :</label><%=reader.R_no %> <label>联系电话 :</label><%=reader.R_pno %>
+            </pre>
         <img src="<%=reader.R_pic %>"/>
     </div>
     </form>

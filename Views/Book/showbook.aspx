@@ -8,14 +8,15 @@
     <title></title>
 </head>
 <body>
+    <h2 style="color:blue;"><i>查看图书</i></h2><hr/><br/>
     <form id="form1" runat="server">
     <div>
-        <label>图书名：</label><p><%=book.B_name %></p><br />
-        <label>图书编号：</label><p><%=book.B_no %></p><br />
-        <label>图书分类：</label><p><%=new DataBooktype().GetOneBooktype(book.T_id).T_name %></p><br />
-        <label>图书总数：</label><p><%=book.B_total %></p><br />
-        <label>图书当前数：</label><p><%=book.B_newnumber %></p><br />
-        <label>图书入库时间：</label><p><%=U_Date.TimeFormat(""+book.B_buildtime,"yyyy-MM-dd hh:mm:ss") %></p><br />
+        <label>图书名：</label><%=book.B_name %><br /><br/>
+        <label>图书编号：</label><%=book.B_no %><br /><br/>
+        <label>图书分类：</label><%=new DataBooktype().GetOneBooktype(book.T_id).T_name %><br /><br/>
+        <label>图书总数：</label><%=book.B_total %><br /><br/>
+        <label>图书当前数：</label><%=book.B_newnumber %><br /><br/>
+        <label>图书入库时间：</label><%=U_Date.TimeFormat(""+book.B_buildtime,"yyyy-MM-dd hh:mm:ss") %><br /><br/>
     </div>
     </form>
 </body>

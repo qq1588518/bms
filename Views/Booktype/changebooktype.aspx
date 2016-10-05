@@ -8,6 +8,7 @@
     <title></title>
 </head>
 <body>
+    <h2 style="color:blue;"><i>修改图书分类</i></h2><hr/><br/>
     <form id="form1" runat="server">
     <div>
         修改类型名称：<asp:TextBox ID="t_name" runat="server"></asp:TextBox>

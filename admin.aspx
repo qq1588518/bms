@@ -16,7 +16,7 @@
     <!--左侧功能选项栏-->
     <div id="left">
         <div id="left-menu">
-            <strong>&#9770;<%=username%></strong><a href="index.aspx">退出</a><a href="#">帮助</a>
+            <strong>&#9770;<%=username%></strong><a href="index.aspx">退出</a><a href="help.aspx" target="mainFrame">帮助</a>
         </div>
       
         <p class="mnue">菜单列表</p>
