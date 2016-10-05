@@ -8,7 +8,17 @@
 
 function toggle(onclick, lists) {
     $(lists).hide();
+    var times = 0;
+    
     $(onclick).bind("click", function () {
         $(lists).toggle(500);
+        if (times % 2 != 0) {
+            $(onclick + " label").html("&gt;&gt;");
+        } else {
+            $(onclick + " label").html("&#8595;");
+
+        }
+        times++;
     });
+    
 }

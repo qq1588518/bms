@@ -8,6 +8,7 @@
     <title></title>
 </head>
 <body>
+    <h2 style="color:blue;"><i>查看分类树</i></h2><hr/><br/>
     <form id="form1" runat="server">
     <div>
         <!--功能搁置-->
