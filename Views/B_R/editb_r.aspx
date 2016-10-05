@@ -8,6 +8,7 @@
     <title></title>
 </head>
 <body>
+    <h2 style="color:blue;"><i>编辑借/还/续借书</i></h2><hr/><br/>
     <form id="form1" runat="server">
     <div>
         <table width="70%" border="1" cellspacing="0" cellpadding="5">

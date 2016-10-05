@@ -8,6 +8,7 @@
     <title></title>
 </head>
 <body>
+     <h2 style="color:blue;"><i>编辑图书信息</i></h2><hr/><br/>
     <form id="form1" runat="server">
     <div>
         <table width="50%" border="1" cellspacing="0" cellpadding="5">
