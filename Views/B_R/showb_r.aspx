@@ -11,8 +11,8 @@
     <h2 style="color:blue;"><i>查看借还书信息</i></h2><hr/><br/>
     <form id="form1" runat="server">
     <div style="font-size:15px;">
-        <label>读者Id：</label><%=new DataReader().GetOneReaderInfo(br.R_id).R_name %><br /><br/>
-        <label>图书Id：</label><%=new DataBook().GetOneBookInfo(br.B_id).B_name %><br /><br/>
+        <label>读者：</label><%=new DataReader().GetOneReaderInfo(br.R_id).R_name %><br /><br/>
+        <label>图书：</label><%=new DataBook().GetOneBookInfo(br.B_id).B_name %><br /><br/>
         <label>是否归还：</label><%=br.Isback==1?"是":"否" %><br /><br/>
         <label>借书天数：</label><%=br.Numberfirst %><br /><br/>
         <label>续借天数：</label><%=br.Numberagain %><br /><br/>

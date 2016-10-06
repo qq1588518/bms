@@ -11,9 +11,12 @@
     <h2 style="color:blue;"><i>查看分类树</i></h2><hr/><br/>
     <form id="form1" runat="server">
     <div>
+        <strong>所有</strong><br /><br />
         <!--功能搁置-->
-        <%foreach (Booktype booktype in booktypes){;%>
-            <p><%=booktype.T_name%></p>
+        <%foreach (Booktype booktype in booktypesons){;for(int i=0;i<booktype.Lev*2;i++){;%>
+            <label>--</label>
+            <%}; %>
+            <strong><%=booktype.T_name%></strong><br /><br />
         <%};%>
     </div>
     </form>

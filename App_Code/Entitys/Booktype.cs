@@ -39,4 +39,11 @@ public class Booktype
         get { return t_name; }
         set { t_name = value; }
     }
+    private int lev;    //层级
+
+    public int Lev {
+        get { return lev; }
+        set { lev = value; }
+    }
+
 }

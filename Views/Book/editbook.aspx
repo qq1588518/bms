@@ -11,19 +11,19 @@
      <h2 style="color:blue;"><i>编辑图书信息</i></h2><hr/><br/>
     <form id="form1" runat="server">
     <div>
-        <table width="50%" border="1" cellspacing="0" cellpadding="5">
+        <table width="70%" border="1" cellspacing="0" cellpadding="5">
             <tr>
-                <td>图书名</td>
-                <td>图书编号</td>
-                <td>图书分类</td>
-                <td>编辑</td>
+                <th>图书名</th>
+                <th>图书编号</th>
+                <th>图书分类</th>
+                <th>编辑</th>
             </tr>
             <% foreach( Book book in books){;%>
             <tr>
-                <td><%=book.B_name %></td>
-                <td><%=book.B_no %></td>
-                <td><%=new DataBooktype().GetOneBooktype(book.T_id).T_name %></td>
-                <td>
+                <td align="center"><%=book.B_name %></td>
+                <td align="center"><%=book.B_no %></td>
+                <td align="center"><%=new DataBooktype().GetOneBooktype(book.T_id).T_name %></td>
+                <td align="center">
                     <a href="/Views/Book/showbook.aspx?bookid=<%=book.B_id %>" >查看</a>
                     <a href="/Views/Book/changebook.aspx?bookid=<%=book.B_id %>" >修改</a>
                     <a href="/Views/Book/editbook.aspx?delete_bookid=<%=book.B_id %>" >删除</a>
