@@ -18,7 +18,7 @@
     <h2 style="color:blue;"><i>添加分类</i></h2><hr/><br/>
     <form method="get" action="/Views/Booktype/addbooktype.aspx">
     <div>
-        输入类型名称<input type="text" name="t_name"/><br/><br/><br/>
+        输入类型名<input type="text" name="t_name"/><br/><br/><br/>
         选择父分类<select name="t_subid">
         <%foreach(Booktype booktyppe in booktypes){; %>
                <option value="<%=booktyppe.T_id %>"><%=booktyppe.T_name %></option>

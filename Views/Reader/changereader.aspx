@@ -8,14 +8,17 @@
     <title></title>
 </head>
 <body>
+    <h2 style="color:blue;"><i>修改读者信息</i></h2><hr/><br/>
     <form id="form1" runat="server">
     <div>
-        姓名：<asp:TextBox ID="name" runat="server"></asp:TextBox>
-        图书证号：<asp:Label ID="no" runat="server" Text=""></asp:Label>
-        性别：<asp:TextBox ID="sex" runat="server"></asp:TextBox>
-        联系电话：<asp:TextBox ID="pno" runat="server"></asp:TextBox><br />
-        上传照片：<asp:FileUpload ID="picture" runat="server" />
-        <asp:Button ID="changereader" runat="server" Text="确认修改" OnClick="changereader_Click" />
+        <pre>
+        姓名<asp:TextBox ID="name" runat="server"></asp:TextBox><br />
+        性别<asp:DropDownList ID="sex" runat="server"></asp:DropDownList><br />
+    图书证号<asp:Label ID="no" runat="server" Text=""></asp:Label><br />
+    联系电话<asp:TextBox ID="pno" runat="server"></asp:TextBox><br /><br />
+    上传照片<asp:FileUpload ID="picture" runat="server" /><br />
+            <asp:Button ID="changereader" runat="server" Text="确认修改" OnClick="changereader_Click" />
+        </pre>
     </div>
     </form>
 </body>

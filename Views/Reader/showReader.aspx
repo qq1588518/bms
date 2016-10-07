@@ -12,7 +12,7 @@
     <form id="form1" runat="server">
     <div style="font-size:20px;">
         <pre>
-<label>姓名:</label><%=reader.R_name %>  <label>性别 :</label><%=reader.R_sex %> <label>图书证号 :</label><%=reader.R_no %> <label>联系电话 :</label><%=reader.R_pno %>
+<label>姓名:</label><%=reader.R_name %>     <label>性别 :</label><%=reader.R_sex %>     <label>图书证号 :</label><%=reader.R_no %>     <label>联系电话 :</label><%=reader.R_pno %>
             </pre>
         <img src="<%=reader.R_pic %>"/>
     </div>

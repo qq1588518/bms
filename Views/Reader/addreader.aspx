@@ -20,10 +20,10 @@
     <div style="font-size:15px;">
         <pre>
         姓名<asp:TextBox ID="name" runat="server"></asp:TextBox><br/><br/>
-        性别<asp:TextBox ID="sex" runat="server"></asp:TextBox><br/><br/>
+        性别<asp:DropDownList ID="sex" runat="server"></asp:DropDownList><br />
     联系电话<asp:TextBox ID="pno" runat="server"></asp:TextBox><br/><br/>
     上传照片<asp:FileUpload ID="picture" runat="server" /><br/><br/>
-        <asp:Button ID="addreader" runat="server" Text="提交" OnClick="addreader_Click" />
+            <asp:Button ID="addreader" runat="server" Text="提交" OnClick="addreader_Click" />
             </pre>
     </div>
         <div id="pic">

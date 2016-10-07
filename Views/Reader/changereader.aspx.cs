@@ -28,6 +28,12 @@ public partial class Views_Reader_changereader : System.Web.UI.Page
         r_sex = sex.Text;
         r_pno = pno.Text;
 
+        List<String> sexs = new List<String>();
+        sexs.Add("男");
+        sexs.Add("女");
+        sex.DataSource = sexs;
+        sex.DataBind();
+
         r_id = int.Parse(Request.QueryString.Get("readerid"));
         Reader reader = new DataReader().GetOneReaderInfo(r_id);
         name.Text = reader.R_name;

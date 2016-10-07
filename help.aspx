@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>帮助</title>
+    <title></title>
 </head>
 <body>
     <h2 style="color:red;font-size:30px;text-align:center;">图书管理系统简介</h2><hr/><br/>

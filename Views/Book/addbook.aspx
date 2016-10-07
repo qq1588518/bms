@@ -23,7 +23,7 @@
     选择分类<asp:DropDownList ID="booklist" runat="server"></asp:DropDownList><br/><br/>
     图书编号<asp:TextBox ID="b_no" runat="server"></asp:TextBox><br /><br/>
         数量<asp:TextBox ID="b_total" runat="server"></asp:TextBox><br /><br/>
-        <asp:Button ID="addbook" runat="server" Text="入库" OnClick="addbook_Click" />
+            <asp:Button ID="addbook" runat="server" Text="入库" OnClick="addbook_Click" />
         </pre>
     </div>
         <div id="pic">

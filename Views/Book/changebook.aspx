@@ -8,14 +8,17 @@
     <title></title>
 </head>
 <body>
+    <h2 style="color:blue;"><i> 修改图书信息</i></h2><hr/><br/>
     <form id="form1" runat="server">
-    <div>
-        书名：<asp:TextBox ID="b_name" runat="server"></asp:TextBox>
-        选择分类：<asp:DropDownList ID="booklist" runat="server"></asp:DropDownList>
-        图书编号：<asp:TextBox ID="b_no" runat="server"></asp:TextBox>
-        数量：<asp:TextBox ID="b_total" runat="server"></asp:TextBox>
-        当前数量：<asp:TextBox ID="b_newnumber" runat="server"></asp:TextBox>
-        <asp:Button ID="addbook" runat="server" Text="确认提交" OnClick="changebook_Click"/>
+    <div style="font-size:20px;">
+        <pre>
+        书名<asp:TextBox ID="b_name" runat="server"></asp:TextBox><br/>    
+    选择分类<asp:DropDownList ID="booklist" runat="server"></asp:DropDownList><br/>
+    图书编号<asp:TextBox ID="b_no" runat="server"></asp:TextBox><br/>
+        数量<asp:TextBox ID="b_total" runat="server"></asp:TextBox><br/>
+    当前数量<asp:TextBox ID="b_newnumber" runat="server"></asp:TextBox><br/>
+            <asp:Button ID="addbook" runat="server" Text="确认提交" OnClick="changebook_Click"/>
+            </pre>
     </div>
     </form>
 </body>

@@ -22,7 +22,7 @@
         读者<asp:DropDownList ID="readerlist" runat="server"></asp:DropDownList><br/><br/>
         图书<asp:DropDownList ID="booklist" runat="server"></asp:DropDownList><br/><br/>
         天数<asp:TextBox ID="numberfirst" runat="server"></asp:TextBox><br/><br/>
-        <asp:Button ID="addb_r" runat="server" Text="提交" OnClick="addb_r_Click" />
+            <asp:Button ID="addb_r" runat="server" Text="提交" OnClick="addb_r_Click" />
             </pre>
     </div>
         <div id="pic">

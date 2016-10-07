@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <p><%=Request.QueryString.Get("successinfo")==null?"操作成功":Request.QueryString.Get("successinfo") %></p>
+        <h2>&gt;&gt;&gt;<%=Request.QueryString.Get("successinfo")==null?"操作成功":Request.QueryString.Get("successinfo") %></h2>
     </div>
     </form>
 </body>
